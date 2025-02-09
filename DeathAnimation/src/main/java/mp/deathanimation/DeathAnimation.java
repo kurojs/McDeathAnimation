@@ -81,15 +81,16 @@ public class DeathAnimation extends JavaPlugin implements Listener {
     private void mostrarAnimacion(Player jugador) {
         int numeroDeFotogramas = fotogramas.size();
 
-        // Use an asynchronous thread for each player to send animations (English) / 各プレイヤーにアニメーションを送信するために非同期スレッドを使用する (日本語) / Usar un hilo asincrónico por cada jugador para enviar las animaciones (Español)
+        // Usar un hilo asincrónico para manejar la animación sin afectar el rendimiento
         Bukkit.getScheduler().runTask(this, () -> {
             for (int i = 0; i < numeroDeFotogramas; i++) {
                 final String simbolo = fotogramas.get(i);
 
-                // We use runTaskLater to display each frame with the appropriate delay (English) / 適切な遅延で各フレームを表示するためにrunTaskLaterを使用する (日本語) / Usamos runTaskLater para mostrar cada fotograma con el retraso adecuado (Español)
                 Bukkit.getScheduler().runTaskLater(this, () -> {
-                    // Display the frame as a title on the specific player's client (English) / 特定のプレイヤーのクライアントにタイトルとしてフレームを表示する (日本語) / Mostrar el fotograma como título en el cliente del jugador específico (Español)
-                    jugador.sendTitle("§f" + simbolo, "", 0, 20, 0);
+                    // Mostrar la animación a todos los jugadores
+                    for (Player p : Bukkit.getOnlinePlayers()) {
+                        p.sendTitle("§f" + simbolo, "", 0, 20, 0);
+                    }
                 }, i * (int) velocidadAnimacion);
             }
         });
