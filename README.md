@@ -28,23 +28,23 @@
   ### Example Configuration (`config.yml`):
 
   ```yaml
-animacion: true          # Whether the animation is enabled or not (English)
-unicode_inicial: '\uE000' # Initial Unicode for the animation frames (English)
-numero_de_fotogramas: 92  # Total number of animation frames (English)
-velocidad_animacion: 1   # Animation speed in ticks, 20 ticks = 1 second (English)
+animacion: true          # Whether the animation is enabled or not 
+unicode_inicial: '\uE000' # Initial Unicode for the animation frames 
+numero_de_fotogramas: 92  # Total number of animation frames 
+velocidad_animacion: 1   # Animation speed in ticks, 20 ticks = 1 second 
 
-# Commands that will be executed during the animation (English)
+# Commands that will be executed during the animation 
 comandos:
   - 'title @a actionbar {"text":"{player} ha muerto","color":"red"}'
 
-# Sound configuration (English)
+# Sound configuration 
 sonido:
-  activar: true            # Enable/disable custom sound (English)
-  volumen: 1.0              # Sound volume (from 0.0 to 1.0) (English)
-  pitch: 1.0                # Sound pitch (from 0.5 to 2.0) (English)
+  activar: true            # Enable/disable custom sound 
+  volumen: 1.0              # Sound volume (from 0.0 to 1.0) 
+  pitch: 1.0                # Sound pitch (from 0.5 to 2.0) 
 
-# Wait time for the 'title' command (in ticks) (English)
-title_wait: 40 # 20 ticks by default, which is 1 second (English)
+# Wait time for the 'title' command (in ticks) 
+title_wait: 40 # 20 ticks by default, which is 1 second 
 ```
   ## Texture Pack Setup
 
