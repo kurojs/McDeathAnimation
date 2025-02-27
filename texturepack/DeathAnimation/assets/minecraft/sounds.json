@@ -1,6 +1,0 @@
-{
-	"muerte": {
-	  "sounds": [{ "name": "custom/muerte/muerte", "stream": false }],
-	  "category": "voice"
-	}
-}
