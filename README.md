@@ -47,6 +47,8 @@
   ### How the Plugin Works with the Resource Pack:
 
   - Upon installation and activation of the plugin on your server, the plugin will output a list of generated **Unicode characters** to the console. These Unicode characters are used to create the frames of the animation.
+
+![Console](https://cdn.discordapp.com/attachments/1252798714439794710/1344777390328381470/2025-02-27_132521.png?ex=67c2250a&is=67c0d38a&hm=bab95d9dab366e67746a7d9d41b6e12c1c448579065a2583bcbf83517ce72d1f&)
   
   - The number of frames generated will depend on your configuration in the `config.yml` file (specifically the **number_of_frames** parameter).
   
