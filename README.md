@@ -2,8 +2,7 @@
 
 An advanced Java plugin for Minecraft that adds custom animations and sound effects that trigger when the player dies using a resource pack.
 
-
-![MCDeathCore Demo](https://cdn.discordapp.com/attachments/1252798714439794710/1344767656800026624/mcdeath.gif?ex=67c21bf9&is=67c0ca79&hm=534831ece9c73d283be06b6356e267ca01eecea57bf07ddfdfe14e133a8f52ba&)
+![MCDeathCore Demo](https://kurojs.github.io/AssetHub/mcdeath.gif)
 
 ## Features
 
