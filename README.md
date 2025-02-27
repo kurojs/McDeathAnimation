@@ -39,3 +39,44 @@
   comandos:
     - "title {player} title Death Text"
   title_wait: 20
+```
+  ## Texture Pack Setup
+
+  The **DeathAnimation** plugin relies on a **resource pack** to display the custom animation on the player's screen when they die. This animation is composed of Unicode characters, and the frames of the animation must be configured in the **font file** of the resource pack.
+
+  ### How the Plugin Works with the Resource Pack:
+
+  - Upon installation and activation of the plugin on your server, the plugin will output a list of generated **Unicode characters** to the console. These Unicode characters are used to create the frames of the animation.
+  
+  - The number of frames generated will depend on your configuration in the `config.yml` file (specifically the **number_of_frames** parameter).
+  
+  - These Unicode characters must be added to the **default.json** file of your resource pack's font configuration, in order to link the characters with actual images for the animation.
+
+  ### Example Unicode Frame Configuration in `default.json`:
+
+  Each Unicode character corresponds to a frame, and the characters need to be added to the `chars` list in the **font** section of your resource pack. Here is an example of how you might configure 3 frames in the `default.json`:
+
+   ```yaml 
+  [
+    {
+      "type": "bitmap",
+      "file": "minecraft:0090.png",
+      "ascent": 30,
+      "height": 40,
+      "chars": ["\uE059"]  
+    },
+    {
+      "type": "bitmap",
+      "file": "minecraft:0091.png",
+      "ascent": 30,
+      "height": 40,
+      "chars": ["\uE05A"]  
+    },
+    {
+      "type": "bitmap",
+      "file": "minecraft:0092.png",
+      "ascent": 30,
+      "height": 40,
+      "chars": ["\uE05B"]  
+    }
+  ]
