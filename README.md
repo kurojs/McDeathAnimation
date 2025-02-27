@@ -37,16 +37,6 @@ unicode_inicial: "\uE000"
 numero_de_fotogramas: 92
 ```
 
-## Contributing
-Contributions are welcome! Feel free to fork the repository, make changes, and submit a pull request.
-
-## License
-This project is licensed under the MIT License.
-
-## Contact
-Developer: Kuromy
-🌐 Portfolio: https://github.com/kuromy777/
-
 # MCDeathCoreJava (日本語)
 
 リソース パックの助けを借りて、プレイヤーの死亡時にカスタム アニメーションとユニークなサウンド効果を追加する Minecraft Java 用の高度なプラグイン。
@@ -83,14 +73,4 @@ Developer: Kuromy
 unicode_inicial: "\uE000"
 numero_de_fotogramas: 92
 ```
-
-## 貢献
-貢献は歓迎します！リポジトリをフォークし、変更を加え、プルリクエストを送信してください。
-
-## ライセンス
-このプロジェクトはMITライセンスの下でライセンスされています。
-
-## 連絡先
-開発者: Kuromy
-🌐 ポートフォリオ: https://github.com/kuromy777/
 
